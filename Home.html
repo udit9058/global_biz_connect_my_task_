@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Patient Details Entry</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      /* Add the background image path here */
+      background-image: url('a.jpg');
+      /* Set background image size and repeat properties as needed */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.7);
+      /* Adjust opacity here (0.7 = 70% transparent) */
+      border: none;
+      /* Remove the default card border */
+    }
+
+    .card-header {
+      background-color: #007bff;
+      /* Set the header background color */
+    }
+
+    .card-header h4 {
+      margin: 0;
+      /* Remove any margin to center the text */
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      /* Set the button background color */
+      border: none;
+      /* Remove the default button border */
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      /* Change button background color on hover */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Patient Details</h4>
+          </div>
+          <div class="card-body">
+            <form method="post" action="done.php">
+              <form action="done.php" method="post">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter patient name"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="address">Address:</label>
+                  <textarea class="form-control" id="address" rows="3" placeholder="Enter patient address" required
+                    name="address"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone No:</label>
+                  <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter phone number"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="admittedDate">Admitted Date:</label>
+                  <input type="date" name="admitted" class="form-control" id="admittedDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="patientId">Patient ID:</label>
+                  <input type="text" name="patient" class="form-control" id="patientId" placeholder="Enter patient ID"
+                    required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
